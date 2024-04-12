@@ -1,1 +1,1 @@
-python3 app.run
+python3 app.py
