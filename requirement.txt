@@ -1,4 +1,4 @@
 python3 -n venv myenv
 source myenv/bin/activate
-pip3 install Flask
-pip3 install pytest
+pip install Flask
+pip install pytest
