@@ -1,2 +1,2 @@
-pip install Flask
-pip install pytest
+sudo pip install Flask
+sudo pip install pytest
