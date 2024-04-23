@@ -1,9 +1,10 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.options import Options
 
 options = Options()
 options.binary_location = r"/snap/bin/firefox/"
-driver = webdriver.Firefox(options=options, executable_path="/snap/bin/firefox/")
+driver = webdriver.Firefox(options=options, service=FirefoxService("/snap/bin/firefox/"))
 
 #from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 #from selenium import webdriver
