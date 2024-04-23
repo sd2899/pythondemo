@@ -13,10 +13,11 @@ RUN pip install --no-cache-dir -r requirement.txt
 # Run tests
 RUN pytest
 
-# Run the Selenium Test Case
-
 # Expose the port that Flask app runs on
 EXPOSE 5000
 
 # Run the Flask application
 CMD ["python", "app.py"]
+
+# Run the Selenium Test Case
+CMD ["python", "Seleniumtestcase.py"]
