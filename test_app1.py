@@ -1,9 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from webdriver_manager.firefox import GeckoDriverManager
 
 # Initialize the WebDriver 
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
+#driver = webdriver.Firefox()
 
 # Navigate to the Flask application's URL
 driver.get("http://172.29.233.42:5000")
