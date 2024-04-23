@@ -16,8 +16,10 @@ RUN pytest
 # Expose the port that Flask app runs on
 EXPOSE 5000
 
+# Run the Selenium Test Case
+CMD ["python", "Seleniumtestcase.py"]
+
 # Run the Flask application
 CMD ["python", "app.py"]
 
-# Run the Selenium Test Case
-CMD ["python", "Seleniumtestcase.py"]
+
