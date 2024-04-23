@@ -1,11 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# Initialize the WebDriver (Chrome in this example)
-driver = webdriver.Chrome()
+# Initialize the WebDriver 
+driver = webdriver.Firefox()
 
 # Navigate to the Flask application's URL
-driver.get("http://localhost:5000")
+driver.get("http://172.29.233.42:5000")
 
 try:
     print("Test passed: 'Hello, World!' text found.")
